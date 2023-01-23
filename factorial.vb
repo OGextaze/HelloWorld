@@ -1,15 +1,15 @@
 Imports System
 
-Module Program
+Module factorial
     Sub Main(args As String())
         Dim N As Integer, F As Integer = 1
-        Console.Write("Я умею считать факториал. Введите целое число: N = ")
+        Console.Write("Гџ ГіГ¬ГҐГѕ Г±Г·ГЁГІГ ГІГј ГґГ ГЄГІГ®Г°ГЁГ Г«. Г‚ГўГҐГ¤ГЁГІГҐ Г¶ГҐГ«Г®ГҐ Г·ГЁГ±Г«Г®: N = ")
         N = Console.ReadLine
         For i As Integer = 1 To N
             If F <= Int32.MaxValue / i Then
                 F = F * i
             Else
-                Console.WriteLine("Переполнение памяти! Расчет выполнен для N = {0}", i - 1)
+                Console.WriteLine("ГЏГҐГ°ГҐГЇГ®Г«Г­ГҐГ­ГЁГҐ ГЇГ Г¬ГїГІГЁ! ГђГ Г±Г·ГҐГІ ГўГ»ГЇГ®Г«Г­ГҐГ­ Г¤Г«Гї N = {0}", i - 1)
                 Exit For
             End If
         Next
